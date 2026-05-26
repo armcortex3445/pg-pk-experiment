@@ -1,7 +1,6 @@
 import { init, resetPGStatStatements,close } from './lib/db.js';
 import dotenv from 'dotenv';
 import { runBench } from './lib/k6.js'
-import PG from 'pg';
 
 
 async function main(){
