@@ -18,7 +18,12 @@ There are three PK to compare with those index performance
 ## Command
 
 ```bash
-node init_db.js && node run_bench.js && node print_result.js
+node init_db.js && node print_result.js && node run_bench.js && node print_result.js
 ```
+
+## Result
+
+- `./output/result{YYMMDD_hhmm}/test.txt` file show results of performance. it includes table IO, test query performance, table disk inspect and index disk inspect
+- if success above command, you can see two `${YYMMDD_hhmm}` folder. one includes result before running test and the other includes result after test.
 
 # Trouble shooting
