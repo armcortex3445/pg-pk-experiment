@@ -42,6 +42,7 @@ async function main(){
         keyset : (tableName) => [`SELECT`,`${tableName}`,`WHERE`,`id`,`>`] ,
         select : (tableName) => [`SELECT`,`${tableName}`,`WHERE`,`id`, `=`],
         update : (tableName) => [`UPDATE`, `${tableName}`, `SET`, `val`,`WHERE`, `id`, `=`],
+        copy : (tableName) => ['COPY',`${tableName}`,'FROM',`STDIN`],
 
     }
     init(dbConfig);
