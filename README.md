@@ -17,8 +17,16 @@ There are three PK to compare with those index performance
 
 ## Command
 
+- Test : Random UUID PK Effects
+
 ```bash
 node init_db.js && node print_result.js && node run_bench.js && node print_result.js
+```
+
+- Test: Clustering Effects
+
+```
+node init_db.js && node print_result.js && node run_cluster.js && node print_result.js
 ```
 
 ## Result
